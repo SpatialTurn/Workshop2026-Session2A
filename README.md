@@ -1,7 +1,7 @@
 # Raster Data & Remote Sensing
 
 Source for the **Raster Data & Remote Sensing** module of the [Workshop 2026](https://spatialturn.github.io/workshop2026.html) materials, part of [Enabling the Geospatial Turn in the Social Sciences](https://spatialturn.github.io/).
-Published at <https://spatialturn.github.io/session2a/>.
+Published at <https://spatialturn.github.io/Workshop2026-Session2A/>.
 
 Finding raster data (historical maps, declassified CORONA imagery, Sentinel-2 and SRTM elevation data) and analyzing digital elevation models in QGIS (slope, aspect, hillshade and classification).
 
