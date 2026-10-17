@@ -81,7 +81,7 @@ With a projected DEM we can now generate three derived layers: slope, aspect, an
 
 ![Slope layer generated from the DEM.](04_Slope.png "Slope")
 
-Slope measures how steep the terrain is at each pixel — the rate of elevation change over horizontal distance. Values range from 0° (flat) to 90° (vertical cliff). Slope is commonly used to assess hiking trail difficulty, landslide risk, and water runoff potential.
+Slope measures how steep the terrain is at each pixel: the rate of elevation change over horizontal distance. Values range from 0° (flat) to 90° (vertical cliff). Slope is commonly used to assess hiking trail difficulty, landslide risk, and water runoff potential.
 
 ### Aspect
 
@@ -97,7 +97,7 @@ Aspect indicates which compass direction each slope faces. Values run from 0° t
 
 ![Hillshade layer generated from the DEM.](06_Hillshade.png "Hillshade")
 
-Hillshade simulates how sunlight would illuminate the terrain from a given position. Brighter pixels receive more direct light; darker pixels are in shadow. Hillshade is primarily a visual aid — it makes topography easier to interpret at a glance but does not contain analytical data of its own.
+Hillshade simulates how sunlight would illuminate the terrain from a given position. Brighter pixels receive more direct light; darker pixels are in shadow. Hillshade is primarily a visual aid: it makes topography easier to interpret at a glance but does not contain analytical data of its own.
 
 :::::::::::::::::::::::::::::::::::: challenge
 
@@ -124,14 +124,14 @@ The grayscale DEM is hard to read. Applying a color ramp makes elevation pattern
 
 ![DEM with spectral pseudocolor classification applied.](07_DEMClassification.png "DEM Classification")
 
-Equal interval divides the full elevation range into classes of equal size. You can adjust the **number of classes** to the right of the mode selector — try different values and classification modes (e.g., quantile) to see how the visualization changes.
+Equal interval divides the full elevation range into classes of equal size. You can adjust the **number of classes** to the right of the mode selector: try different values and classification modes (e.g., quantile) to see how the visualization changes.
 
 :::::::::::::::::::::::::::::::::::: challenge
 
 ### Exercise 2: Experiment with Symbology
 
 1. Reopen the Symbology tab for `DEM_Analysis`
-2. Try changing the classification mode from **Equal Interval** to **Quantile** — how does the map change?
+2. Try changing the classification mode from **Equal Interval** to **Quantile**: how does the map change?
 3. Try a different color ramp (e.g., **Viridis** or **Magma**)
 4. Increase or decrease the number of classes
 

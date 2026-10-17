@@ -25,7 +25,7 @@ exercises: 15
 
 ## Introduction
 
-Raster data — scanned maps, aerial photographs, satellite imagery, elevation models — forms the visual backbone of many GIS projects. Some raster files come **georeferenced** (positioned in real-world coordinates and ready to use), while others, like scanned paper maps, are **non-georeferenced** and must be aligned manually before they can overlay with other data layers.
+Raster data (scanned maps, aerial photographs, satellite imagery, elevation models) forms the visual backbone of many GIS projects. Some raster files come **georeferenced** (positioned in real-world coordinates and ready to use), while others, like scanned paper maps, are **non-georeferenced** and must be aligned manually before they can overlay with other data layers.
 
 This session covers four types of raster data, moving from historical sources to modern satellite products.
 
@@ -33,15 +33,15 @@ This session covers four types of raster data, moving from historical sources to
 
 ## 1. Scanned Historical Maps
 
-Several public and academic websites host scanned paper maps that are free to download. These are typically non-georeferenced — you will need to georeference them before using them in QGIS.
+Several public and academic websites host scanned paper maps that are free to download. These are typically non-georeferenced: you will need to georeference them before using them in QGIS.
 
 ::::::::::::::::::::::::::::::::::::: callout
 
 ### Useful Map Repositories
 
-- [Perry-Castañeda Library Map Collection](https://legacy.lib.utexas.edu/maps/) — University of Texas; thousands of scanned maps organized by region
-- [National Library of Australia Trove](https://trove.nla.gov.au/) — Australian maps, photographs, and archival material
-- [Old Maps Online](https://www.oldmapsonline.org/) — aggregates historical maps from libraries worldwide
+- [Perry-Castañeda Library Map Collection](https://legacy.lib.utexas.edu/maps/): University of Texas; thousands of scanned maps organized by region
+- [National Library of Australia Trove](https://trove.nla.gov.au/): Australian maps, photographs, and archival material
+- [Old Maps Online](https://www.oldmapsonline.org/): aggregates historical maps from libraries worldwide
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -49,25 +49,25 @@ Several public and academic websites host scanned paper maps that are free to do
 
 1. Go to [https://legacy.lib.utexas.edu/maps/](https://legacy.lib.utexas.edu/maps/)
 2. Scroll down and click **Historical**
-3. Browse by topic or region until you find a useful map — large military topographic series often include index maps to help locate a specific area
+3. Browse by topic or region until you find a useful map: large military topographic series often include index maps to help locate a specific area
 4. Right-click the map image and select **Save Image As**, then save it to your project folder
 
 ---
 
 ## 2. CORONA Satellite Imagery
 
-During the Cold War the United States operated a series of classified reconnaissance satellites. The [CORONA program (1960–1972)](https://www.usgs.gov/centers/eros/science/usgs-eros-archive-declassified-data-declassified-satellite-imagery-1) produced over 860,000 black-and-white images — the first high-resolution (up to ~2 m) stereo photographs of the Earth's surface. The imagery was declassified in 1995.
+During the Cold War the United States operated a series of classified reconnaissance satellites. The [CORONA program (1960 to 1972)](https://www.usgs.gov/centers/eros/science/usgs-eros-archive-declassified-data-declassified-satellite-imagery-1) produced over 860,000 black-and-white images: the first high-resolution (up to ~2 m) stereo photographs of the Earth's surface. The imagery was declassified in 1995.
 
-The highest-resolution images come from the **KH-4B** series (1967–1972), captured on panoramic film strips each covering roughly 8.6 × 117 km. High-resolution scans are available from USGS EarthExplorer at no cost (at up to 3600 dpi), or for $30 per frame for scenes that have not yet been scanned.
+The highest-resolution images come from the **KH-4B** series (1967 to 1972), captured on panoramic film strips each covering roughly 8.6 × 117 km. High-resolution scans are available from USGS EarthExplorer at no cost (at up to 3600 dpi), or for $30 per frame for scenes that have not yet been scanned.
 
 Since declassification, CORONA imagery has been widely used to study historical landscapes, identify archaeological sites, trace old land tenure boundaries, and document features lost to urbanization or agricultural expansion.
 
 ### Option A: Pre-Georeferenced Imagery from CAST
 
-The [CORONA Atlas at the University of Arkansas CAST](https://corona.cast.uark.edu/) provides a subset of CORONA scenes that have already been georeferenced — ready to use directly in QGIS.
+The [CORONA Atlas at the University of Arkansas CAST](https://corona.cast.uark.edu/) provides a subset of CORONA scenes that have already been georeferenced: ready to use directly in QGIS.
 
 1. Go to [https://corona.cast.uark.edu/](https://corona.cast.uark.edu/) and click **Explore Atlas**
-2. Red rectangles on the map show available missions — zoom in to your area of interest
+2. Red rectangles on the map show available missions: zoom in to your area of interest
 3. Use the slider tool at the bottom of the screen to compare CORONA and modern imagery side by side
 4. Adjust transparency with the slider next to **Corona Imagery** to see how features have changed
 5. Expand the **Corona Imagery** layer with the **(+)** button to see individual images
@@ -75,12 +75,12 @@ The [CORONA Atlas at the University of Arkansas CAST](https://corona.cast.uark.e
 ::::::::::::::::::::::::::::::::::::: callout
 
 ### Tip
-As you zoom in, fewer missions will be listed — this is normal, since each scene covers a specific footprint.
+As you zoom in, fewer missions will be listed: this is normal, since each scene covers a specific footprint.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 6. Toggle images on and off to find the best one, then click the blue download button **(V)** next to it
-7. Click **Download GeoTiff** — these are large files, so the download may take a few minutes
+7. Click **Download GeoTiff**: these are large files, so the download may take a few minutes
 8. Move the downloaded file to a dedicated folder (e.g., `CORONA/`) in your GIS project directory
 
 #### Loading the image in QGIS
@@ -136,7 +136,7 @@ Make sure you are logged in to your EarthExplorer account. If you do not have on
 
 - Move the downloaded `.tgz` file to your project folder
 - Extract with **7-Zip → Extract Here** to get a `.tar` file
-- Extract the `.tar` file again — this produces four `.tif` files (the panoramic strip split into segments labeled a, b, c, and d)
+- Extract the `.tar` file again: this produces four `.tif` files (the panoramic strip split into segments labeled a, b, c, and d)
 
 ::::::::::::::::::::::::::::::::::::: callout
 
@@ -167,10 +167,10 @@ Make sure you have a Copernicus Data Space account. Register for free at [https:
 
 With the **Visualize** tab active, set your search criteria:
 
-- **Date or date range** — select a date or click "show latest data"
-- **Cloud cover** — use the slider to set a maximum (e.g., 10%)
-- **Satellite** — select **Sentinel-2**
-- **Band combination** — choose a preset such as True Color, NDVI, or Land Cover Classes
+- **Date or date range**: select a date or click "show latest data"
+- **Cloud cover**: use the slider to set a maximum (e.g., 10%)
+- **Satellite**: select **Sentinel-2**
+- **Band combination**: choose a preset such as True Color, NDVI, or Land Cover Classes
 
 Click **Find products for current view** to open the **Search** tab with matching scenes. Each scene corresponds to a green square on the map.
 
@@ -178,7 +178,7 @@ Click **Find products for current view** to open the **Search** tab with matchin
 
 - Click the **i button** on a scene to view metadata, or the **crosshairs icon** to zoom to it
 - Click **Visualize** below a thumbnail to explore band combinations interactively
-- To download, click the **Download** button on the right side of a listing — the file is a `.SAFE.ZIP` archive that can be extracted and imported into QGIS
+- To download, click the **Download** button on the right side of a listing: the file is a `.SAFE.ZIP` archive that can be extracted and imported into QGIS
 
 :::::::::::::::::::::::::::::::::::: challenge
 
@@ -196,7 +196,7 @@ Click **Find products for current view** to open the **Search** tab with matchin
 
 The [Shuttle Radar Topography Mission (SRTM)](https://www.usgs.gov/centers/eros/science/usgs-eros-archive-digital-elevation-shuttle-radar-topography-mission-srtm-1) was a joint international project in 2000 that used radar from the Space Shuttle *Endeavour* to produce one of the most accurate near-global elevation datasets. The most recent release, **SRTM 1 Arc-Second Global (V3, 2014)**, has ~30 m resolution and is divided into 1° × 1° tiles available as free GeoTIFF downloads.
 
-When loaded into QGIS, raw DEM files appear as grayscale images where each pixel's shade represents the elevation of that 30 × 30 m area. From this data you can generate hillshade, slope, aspect, and contour layers — we will do exactly that in the next session.
+When loaded into QGIS, raw DEM files appear as grayscale images where each pixel's shade represents the elevation of that 30 × 30 m area. From this data you can generate hillshade, slope, aspect, and contour layers: we will do exactly that in the next session.
 
 ### Downloading from EarthExplorer
 
@@ -225,7 +225,7 @@ The downloaded GeoTIFF is already georeferenced and ready to load into QGIS.
 ### Exercise 3: Download an SRTM Tile
 
 1. Using EarthExplorer, download an SRTM tile covering the same area you used for Sentinel-2
-2. Load the GeoTIFF into QGIS — you should see a grayscale elevation image
+2. Load the GeoTIFF into QGIS: you should see a grayscale elevation image
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -234,7 +234,7 @@ The downloaded GeoTIFF is already georeferenced and ready to load into QGIS.
 :::::::::::::::::::::::::::::::::::::: keypoints
 
 - Scanned historical maps are widely available online but usually require georeferencing before use in a GIS.
-- CORONA imagery (1960–1972) provides high-resolution historical views and is free from CAST (georeferenced) or EarthExplorer (raw).
+- CORONA imagery (1960 to 1972) provides high-resolution historical views and is free from CAST (georeferenced) or EarthExplorer (raw).
 - Sentinel-2 provides free, 10 m resolution multispectral imagery with a ~5-day revisit cycle.
 - SRTM DEM tiles provide 30 m elevation data that can be used for terrain analysis in the next session.
 
