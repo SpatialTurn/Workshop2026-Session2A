@@ -340,9 +340,9 @@
         
 <section id="aio-acquiring-raster-data"><p>Content from <a href="acquiring-raster-data.html">Exercises: Acquiring Raster Data using Imagery Databases</a></p>
 <hr>
-<p>Last updated on 2026-06-28 |
+<p>Last updated on 2026-10-17 |
 
-        <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/acquiring-raster-data.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+        <a href="https://github.com/SpatialTurn/session2a/edit/main/episodes/acquiring-raster-data.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
@@ -383,8 +383,8 @@ USGS EarthExplorer</li>
 <section><h2 class="section-heading" id="introduction">Introduction<a class="anchor" aria-label="anchor" href="#introduction"></a>
 </h2>
 <hr class="half-width">
-<p>Raster data — scanned maps, aerial photographs, satellite imagery,
-elevation models — forms the visual backbone of many GIS projects. Some
+<p>Raster data (scanned maps, aerial photographs, satellite imagery,
+elevation models) forms the visual backbone of many GIS projects. Some
 raster files come <strong>georeferenced</strong> (positioned in
 real-world coordinates and ready to use), while others, like scanned
 paper maps, are <strong>non-georeferenced</strong> and must be aligned
@@ -395,7 +395,7 @@ sources to modern satellite products.</p>
 </h2>
 <hr class="half-width">
 <p>Several public and academic websites host scanned paper maps that are
-free to download. These are typically non-georeferenced — you will need
+free to download. These are typically non-georeferenced: you will need
 to georeference them before using them in QGIS.</p>
 <div id="useful-map-repositories" class="callout">
 <div class="callout-square">
@@ -408,13 +408,13 @@ to georeference them before using them in QGIS.</p>
 <ul>
 <li>
 <a href="https://legacy.lib.utexas.edu/maps/" class="external-link">Perry-Castañeda
-Library Map Collection</a> — University of Texas; thousands of scanned
+Library Map Collection</a>: University of Texas; thousands of scanned
 maps organized by region</li>
 <li>
 <a href="https://trove.nla.gov.au/" class="external-link">National Library of Australia
-Trove</a> — Australian maps, photographs, and archival material</li>
+Trove</a>: Australian maps, photographs, and archival material</li>
 <li>
-<a href="https://www.oldmapsonline.org/" class="external-link">Old Maps Online</a> —
+<a href="https://www.oldmapsonline.org/" class="external-link">Old Maps Online</a>:
 aggregates historical maps from libraries worldwide</li>
 </ul>
 </div>
@@ -428,7 +428,7 @@ aggregates historical maps from libraries worldwide</li>
 </li>
 <li>Scroll down and click <strong>Historical</strong>
 </li>
-<li>Browse by topic or region until you find a useful map — large
+<li>Browse by topic or region until you find a useful map: large
 military topographic series often include index maps to help locate a
 specific area</li>
 <li>Right-click the map image and select <strong>Save Image As</strong>,
@@ -441,11 +441,11 @@ then save it to your project folder</li>
 <hr class="half-width">
 <p>During the Cold War the United States operated a series of classified
 reconnaissance satellites. The <a href="https://www.usgs.gov/centers/eros/science/usgs-eros-archive-declassified-data-declassified-satellite-imagery-1" class="external-link">CORONA
-program (1960–1972)</a> produced over 860,000 black-and-white images —
+program (1960 to 1972)</a> produced over 860,000 black-and-white images:
 the first high-resolution (up to ~2 m) stereo photographs of the Earth’s
 surface. The imagery was declassified in 1995.</p>
 <p>The highest-resolution images come from the <strong>KH-4B</strong>
-series (1967–1972), captured on panoramic film strips each covering
+series (1967 to 1972), captured on panoramic film strips each covering
 roughly 8.6 × 117 km. High-resolution scans are available from USGS
 EarthExplorer at no cost (at up to 3600 dpi), or for $30 per frame for
 scenes that have not yet been scanned.</p>
@@ -458,12 +458,12 @@ agricultural expansion.</p>
 </h3>
 <p>The <a href="https://corona.cast.uark.edu/" class="external-link">CORONA Atlas at the
 University of Arkansas CAST</a> provides a subset of CORONA scenes that
-have already been georeferenced — ready to use directly in QGIS.</p>
+have already been georeferenced: ready to use directly in QGIS.</p>
 <ol style="list-style-type: decimal">
 <li>Go to <a href="https://corona.cast.uark.edu/" class="external-link">https://corona.cast.uark.edu/</a>
 and click <strong>Explore Atlas</strong>
 </li>
-<li>Red rectangles on the map show available missions — zoom in to your
+<li>Red rectangles on the map show available missions: zoom in to your
 area of interest</li>
 <li>Use the slider tool at the bottom of the screen to compare CORONA
 and modern imagery side by side</li>
@@ -480,7 +480,7 @@ Imagery</strong> to see how features have changed</li>
 <div id="tip" class="callout-inner">
 <h3 class="callout-title">Tip</h3>
 <div class="callout-content">
-<p>As you zoom in, fewer missions will be listed — this is normal, since
+<p>As you zoom in, fewer missions will be listed: this is normal, since
 each scene covers a specific footprint.</p>
 </div>
 </div>
@@ -488,7 +488,7 @@ each scene covers a specific footprint.</p>
 <ol start="6" style="list-style-type: decimal">
 <li>Toggle images on and off to find the best one, then click the blue
 download button <strong>(V)</strong> next to it</li>
-<li>Click <strong>Download GeoTiff</strong> — these are large files, so
+<li>Click <strong>Download GeoTiff</strong>: these are large files, so
 the download may take a few minutes</li>
 <li>Move the downloaded file to a dedicated folder (e.g.,
 <code>CORONA/</code>) in your GIS project directory</li>
@@ -593,7 +593,7 @@ Options</strong> button (disk icon with green arrow) and select
 folder</li>
 <li>Extract with <strong>7-Zip → Extract Here</strong> to get a
 <code>.tar</code> file</li>
-<li>Extract the <code>.tar</code> file again — this produces four
+<li>Extract the <code>.tar</code> file again: this produces four
 <code>.tif</code> files (the panoramic strip split into segments labeled
 a, b, c, and d)</li>
 </ul>
@@ -652,16 +652,16 @@ Browser</a>
 criteria:</p>
 <ul>
 <li>
-<strong>Date or date range</strong> — select a date or click “show
+<strong>Date or date range</strong>: select a date or click “show
 latest data”</li>
 <li>
-<strong>Cloud cover</strong> — use the slider to set a maximum
-(e.g., 10%)</li>
+<strong>Cloud cover</strong>: use the slider to set a maximum (e.g.,
+10%)</li>
 <li>
-<strong>Satellite</strong> — select <strong>Sentinel-2</strong>
+<strong>Satellite</strong>: select <strong>Sentinel-2</strong>
 </li>
 <li>
-<strong>Band combination</strong> — choose a preset such as True
+<strong>Band combination</strong>: choose a preset such as True
 Color, NDVI, or Land Cover Classes</li>
 </ul>
 <p>Click <strong>Find products for current view</strong> to open the
@@ -676,8 +676,8 @@ the <strong>crosshairs icon</strong> to zoom to it</li>
 <li>Click <strong>Visualize</strong> below a thumbnail to explore band
 combinations interactively</li>
 <li>To download, click the <strong>Download</strong> button on the right
-side of a listing — the file is a <code>.SAFE.ZIP</code> archive that
-can be extracted and imported into QGIS</li>
+side of a listing: the file is a <code>.SAFE.ZIP</code> archive that can
+be extracted and imported into QGIS</li>
 </ul>
 <div id="exercise-2-download-sentinel-2-imagery" class="callout challenge">
 <div class="callout-square">
@@ -711,8 +711,8 @@ most recent release, <strong>SRTM 1 Arc-Second Global (V3,
 available as free GeoTIFF downloads.</p>
 <p>When loaded into QGIS, raw DEM files appear as grayscale images where
 each pixel’s shade represents the elevation of that 30 × 30 m area. From
-this data you can generate hillshade, slope, aspect, and contour layers
-— we will do exactly that in the next session.</p>
+this data you can generate hillshade, slope, aspect, and contour layers:
+we will do exactly that in the next session.</p>
 <div class="section level3">
 <h3 id="downloading-from-earthexplorer">Downloading from EarthExplorer<a class="anchor" aria-label="anchor" href="#downloading-from-earthexplorer"></a>
 </h3>
@@ -760,7 +760,7 @@ into QGIS.</p>
 <ol style="list-style-type: decimal">
 <li>Using EarthExplorer, download an SRTM tile covering the same area
 you used for Sentinel-2</li>
-<li>Load the GeoTIFF into QGIS — you should see a grayscale elevation
+<li>Load the GeoTIFF into QGIS: you should see a grayscale elevation
 image</li>
 </ol>
 </div>
@@ -777,8 +777,8 @@ image</li>
 <ul>
 <li>Scanned historical maps are widely available online but usually
 require georeferencing before use in a GIS.</li>
-<li>CORONA imagery (1960–1972) provides high-resolution historical views
-and is free from CAST (georeferenced) or EarthExplorer (raw).</li>
+<li>CORONA imagery (1960 to 1972) provides high-resolution historical
+views and is free from CAST (georeferenced) or EarthExplorer (raw).</li>
 <li>Sentinel-2 provides free, 10 m resolution multispectral imagery with
 a ~5-day revisit cycle.</li>
 <li>SRTM DEM tiles provide 30 m elevation data that can be used for
@@ -788,16 +788,16 @@ terrain analysis in the next session.</li>
 </div>
 </div>
 <!--
-Place links that you need to refer to multiple times across pages here. Delete
-any links that you are not going to use.
- -->
+Links listed here can be reused across pages as [text][name].
+Add reference-style links below as needed.
+-->
 </div>
 </div>
 </section></section><section id="aio-dem-analysis"><p>Content from <a href="dem-analysis.html">Exercises: DEM Analysis and Visualization in QGIS</a></p>
 <hr>
-<p>Last updated on 2026-06-28 |
+<p>Last updated on 2026-10-17 |
 
-        <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/dem-analysis.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+        <a href="https://github.com/SpatialTurn/session2a/edit/main/episodes/dem-analysis.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
@@ -929,7 +929,7 @@ Analysis</strong> in the menu bar.</p>
 layer is <code>DEM_Analysis</code> and click <strong>Run</strong>.</li>
 </ol>
 <figure><img src="04_Slope.png" title="Slope" alt="Slope layer generated from the DEM." class="figure mx-auto d-block"><div class="figcaption">Slope layer generated from the DEM.</div>
-</figure><p>Slope measures how steep the terrain is at each pixel — the rate of
+</figure><p>Slope measures how steep the terrain is at each pixel: the rate of
 elevation change over horizontal distance. Values range from 0° (flat)
 to 90° (vertical cliff). Slope is commonly used to assess hiking trail
 difficulty, landslide risk, and water runoff potential.</p>
@@ -958,7 +958,7 @@ input layer is <code>DEM_Analysis</code> and click
 <figure><img src="06_Hillshade.png" title="Hillshade" alt="Hillshade layer generated from the DEM." class="figure mx-auto d-block"><div class="figcaption">Hillshade layer generated from the DEM.</div>
 </figure><p>Hillshade simulates how sunlight would illuminate the terrain from a
 given position. Brighter pixels receive more direct light; darker pixels
-are in shadow. Hillshade is primarily a visual aid — it makes topography
+are in shadow. Hillshade is primarily a visual aid: it makes topography
 easier to interpret at a glance but does not contain analytical data of
 its own.</p>
 <div id="exercise-1-compare-terrain-layers" class="callout challenge">
@@ -1009,7 +1009,7 @@ Interval</strong>
 applied.</div>
 </figure><p>Equal interval divides the full elevation range into classes of equal
 size. You can adjust the <strong>number of classes</strong> to the right
-of the mode selector — try different values and classification modes
+of the mode selector: try different values and classification modes
 (e.g., quantile) to see how the visualization changes.</p>
 <div id="exercise-2-experiment-with-symbology" class="callout challenge">
 <div class="callout-square">
@@ -1023,7 +1023,7 @@ of the mode selector — try different values and classification modes
 <li>Reopen the Symbology tab for <code>DEM_Analysis</code>
 </li>
 <li>Try changing the classification mode from <strong>Equal
-Interval</strong> to <strong>Quantile</strong> — how does the map
+Interval</strong> to <strong>Quantile</strong>: how does the map
 change?</li>
 <li>Try a different color ramp (e.g., <strong>Viridis</strong> or
 <strong>Magma</strong>)</li>
@@ -1054,9 +1054,9 @@ data far more readable than the default grayscale.</li>
 </div>
 </div>
 <!--
-Place links that you need to refer to multiple times across pages here. Delete
-any links that you are not going to use.
- -->
+Links listed here can be reused across pages as [text][name].
+Add reference-style links below as needed.
+-->
 </section></section>
 </div>
     </main>
@@ -1070,11 +1070,11 @@ any links that you are not going to use.
         <p>This lesson is subject to the <a href="CODE_OF_CONDUCT.html">Code of Conduct</a></p>
         <p>
 
-        <a href="https://github.com/carpentries/workbench-template-md/edit/main/README.md" class="external-link">Edit on GitHub</a>
+        <a href="https://github.com/SpatialTurn/session2a/edit/main/README.md" class="external-link">Edit on GitHub</a>
 
 	
-        | <a href="https://github.com/carpentries/workbench-template-md/blob/main/CONTRIBUTING.md" class="external-link">Contributing</a>
-        | <a href="https://github.com/carpentries/workbench-template-md/" class="external-link">Source</a></p>
+        | <a href="https://github.com/SpatialTurn/session2a/blob/main/CONTRIBUTING.md" class="external-link">Contributing</a>
+        | <a href="https://github.com/SpatialTurn/session2a/" class="external-link">Source</a></p>
         <p>
         <a href="citation.html">Cite</a>
         | <a href="mailto:ilindsay@purdue.edu">Contact</a> | <a href="https://carpentries.org/about/" class="external-link">About</a></p>
@@ -1097,18 +1097,18 @@ any links that you are not going to use.
     {
   "@context": "https://schema.org",
   "@type": "LearningResource",
-  "@id": "https://carpentries.github.io/workbench-template-md/aio.html",
+  "@id": "https://SpatialTurn.github.io/session2a/aio.html",
   "inLanguage": "en",
   "dct:conformsTo": "https://bioschemas.org/profiles/LearningResource/1.0-RELEASE",
   "description": "A Carpentries Lesson teaching foundational data and coding skills to researchers worldwide",
-  "keywords": "DEM, raster, CORONA, USGS, Terrain",
+  "keywords": "raster data, remote sensing, DEM, CORONA, Sentinel-2, SRTM, QGIS",
   "name": "All in One View",
   "creativeWorkStatus": "active",
-  "url": "https://carpentries.github.io/workbench-template-md/aio.html",
-  "identifier": "https://carpentries.github.io/workbench-template-md/aio.html",
+  "url": "https://SpatialTurn.github.io/session2a/aio.html",
+  "identifier": "https://SpatialTurn.github.io/session2a/aio.html",
   "dateCreated": "2026-06-24",
-  "dateModified": "2026-10-13",
-  "datePublished": "2026-10-13"
+  "dateModified": "2026-10-17",
+  "datePublished": "2026-10-17"
 }
 
   </script><script>

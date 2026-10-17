@@ -18,30 +18,30 @@ carpentry: 'incubator'
 carpentry_description: 'Working with raster datasets and remote sensing tools in GIS'
 
 # Overall title for pages.
-title: 'Raster Data & Remote Sensing' # FIXME
+title: 'Raster Data & Remote Sensing'
 
 # Date the lesson was created (YYYY-MM-DD, this is empty by default)
-created: 2026-06-24 # FIXME
+created: '2026-06-24'
 
 # Comma-separated list of keywords for the lesson
-keywords: 'DEM, raster, CORONA, USGS, Terrain' # FIXME
+keywords: 'raster data, remote sensing, DEM, CORONA, Sentinel-2, SRTM, QGIS'
 
 # Life cycle stage of the lesson
 # refer to <https://docs.carpentries.org/resources/curriculum/lesson-life-cycle.html> for details
 # possible values: pre-alpha, alpha, beta, stable
-life_cycle: 'alpha' # FIXME
+life_cycle: 'alpha'
 
 # License of the lesson
 license: 'CC-BY 4.0'
 
 # Link to the source repository for this lesson
-source: 'https://github.com/carpentries/workbench-template-md' # FIXME
+source: 'https://github.com/SpatialTurn/session2a'
 
 # Default branch of your lesson
 branch: 'main'
 
 # Who to contact if there are any issues
-contact: 'ilindsay@purdue.edu' # FIXME
+contact: 'ilindsay@purdue.edu'
 
 # Navigation ------------------------------------------------
 #
