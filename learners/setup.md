@@ -6,7 +6,7 @@ exercises: 0
 
 ## What You Need for This Session
 
-Before starting Session 2a, make sure you have the following ready. If you completed the main workshop setup page, you are already set.
+Before starting Session 2A, make sure you have the following ready. If you completed the main workshop setup page, you are already set.
 
 ### Accounts
 
