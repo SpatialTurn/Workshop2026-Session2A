@@ -22,7 +22,7 @@ exercises: 10
 
 ## Introduction
 
-QGIS offers several tools for analyzing and visualizing raster data, including digital elevation models (DEMs) and multispectral satellite imagery. In this session we will work with the SRTM DEM you downloaded from EarthExplorer in the previous session to generate slope, aspect, and hillshade layers, and then apply color symbology to visualize elevation classes.
+QGIS offers several tools for analyzing and visualizing raster data, including digital elevation models (DEMs) and multispectral satellite imagery. In this episode we will work with the SRTM DEM you downloaded from EarthExplorer in the previous episode to generate slope, aspect, and hillshade layers, and then apply color symbology to visualize elevation classes.
 
 ---
 
@@ -113,7 +113,7 @@ Toggle each of the three layers (slope, aspect, hillshade) on and off in the Lay
 
 The grayscale DEM is hard to read. Applying a color ramp makes elevation patterns much easier to interpret.
 
-11. In the **Layers** panel, uncheck every layer except `DEM_Analysis` so only the original DEM is visible.
+11. In the **Layers** panel, uncheck every layer except `DEM_Analysis` (the reprojected DEM) so only the DEM itself is visible.
 
 12. Right-click `DEM_Analysis`, select **Properties**, and navigate to the **Symbology** tab.
 
