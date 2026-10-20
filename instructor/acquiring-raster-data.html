@@ -310,7 +310,7 @@
       </div>
     </nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Exercises: Acquiring Raster Data using Imagery Databases</h1>
-        <p>Last updated on 2026-10-17 |
+        <p>Last updated on 2026-10-20 |
 
         <a href="https://github.com/SpatialTurn/Workshop2026-Session2A/edit/main/episodes/acquiring-raster-data.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -454,8 +454,9 @@ the download may take a few minutes</li>
 <h4 id="loading-the-image-in-qgis">Loading the image in QGIS<a class="anchor" aria-label="anchor" href="#loading-the-image-in-qgis"></a></h4>
 <ol style="list-style-type: decimal"><li>Open QGIS and click the <strong>Open Data Source Manager</strong>
 button on the toolbar</li>
-<li>Select the <strong>Raster</strong> tab, click
-<strong>Browse</strong>, and navigate to your CORONA GeoTIFF</li>
+<li>Select the <strong>Raster</strong> tab, click the <strong>…</strong>
+button next to <strong>Raster dataset(s)</strong>, and navigate to your
+CORONA GeoTIFF</li>
 <li>Click <strong>Open → Add → Close</strong>
 </li>
 </ol><div id="exercise-1-download-from-cast" class="callout challenge">
@@ -530,11 +531,12 @@ Options</strong> button (disk icon with green arrow) and select
 <h4 id="step-5-extract-the-files">Step 5: Extract the Files<a class="anchor" aria-label="anchor" href="#step-5-extract-the-files"></a></h4>
 <ul><li>Move the downloaded <code>.tgz</code> file to your project
 folder</li>
-<li>Extract with <strong>7-Zip → Extract Here</strong> to get a
-<code>.tar</code> file</li>
-<li>Extract the <code>.tar</code> file again: this produces four
-<code>.tif</code> files (the panoramic strip split into segments labeled
-a, b, c, and d)</li>
+<li>On Windows, extract it with <strong>7-Zip → Extract Here</strong> to
+get a <code>.tar</code> file, then extract the <code>.tar</code> file
+again. On a Mac, double-click the <code>.tgz</code> file (once is
+usually enough).</li>
+<li>You end up with four <code>.tif</code> files: the panoramic strip
+split into segments labeled a, b, c, and d</li>
 </ul><div id="note" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
@@ -555,9 +557,10 @@ it can be overlaid with other spatial data.</p>
 <hr class="half-width"><p>The <a href="https://www.copernicus.eu/en" class="external-link">Sentinel-2 satellite
 program</a>, launched in 2015 by the European Space Agency as part of
 the EU’s Copernicus programme, provides free, high-resolution
-multispectral imagery across 13 spectral bands. Two satellites (2A and
-2B) image the entire land surface approximately every 5 days at 10 m
-resolution in the visible bands.</p>
+multispectral imagery across 13 spectral bands. Two satellites in orbit
+at a time (originally Sentinel-2A and 2B; Sentinel-2C took over from 2A
+in 2025) image the entire land surface approximately every 5 days at 10
+m resolution in the visible bands.</p>
 <p>Sentinel-2 imagery is especially useful for land cover
 classification, vegetation health monitoring (NDVI), and environmental
 change detection.</p>
@@ -634,7 +637,7 @@ available as free GeoTIFF downloads.</p>
 <p>When loaded into QGIS, raw DEM files appear as grayscale images where
 each pixel’s shade represents the elevation of that 30 × 30 m area. From
 this data you can generate hillshade, slope, aspect, and contour layers:
-we will do exactly that in the next session.</p>
+we will do exactly that in the next episode, DEM Analysis.</p>
 <div class="section level3">
 <h3 id="downloading-from-earthexplorer">Downloading from EarthExplorer<a class="anchor" aria-label="anchor" href="#downloading-from-earthexplorer"></a></h3>
 <p>The process follows the same EarthExplorer interface used for CORONA
@@ -760,7 +763,7 @@ Add reference-style links below as needed.
   "url": "https://SpatialTurn.github.io/Workshop2026-Session2A/instructor/acquiring-raster-data.html",
   "identifier": "https://SpatialTurn.github.io/Workshop2026-Session2A/instructor/acquiring-raster-data.html",
   "dateCreated": "2026-06-24",
-  "dateModified": "2026-10-17",
+  "dateModified": "2026-10-20",
   "datePublished": "2026-10-20"
 }
 
