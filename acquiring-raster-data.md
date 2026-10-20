@@ -86,7 +86,7 @@ As you zoom in, fewer missions will be listed: this is normal, since each scene 
 #### Loading the image in QGIS
 
 1. Open QGIS and click the **Open Data Source Manager** button on the toolbar
-2. Select the **Raster** tab, click **Browse**, and navigate to your CORONA GeoTIFF
+2. Select the **Raster** tab, click the **…** button next to **Raster dataset(s)**, and navigate to your CORONA GeoTIFF
 3. Click **Open → Add → Close**
 
 :::::::::::::::::::::::::::::::::::: challenge
@@ -135,8 +135,9 @@ Make sure you are logged in to your EarthExplorer account. If you do not have on
 #### Step 5: Extract the Files
 
 - Move the downloaded `.tgz` file to your project folder
-- Extract with **7-Zip → Extract Here** to get a `.tar` file
-- Extract the `.tar` file again: this produces four `.tif` files (the panoramic strip split into segments labeled a, b, c, and d)
+- On Windows, extract it with **7-Zip → Extract Here** to get a `.tar` file, then extract the `.tar` file
+  again. On a Mac, double-click the `.tgz` file (once is usually enough).
+- You end up with four `.tif` files: the panoramic strip split into segments labeled a, b, c, and d
 
 ::::::::::::::::::::::::::::::::::::: callout
 
@@ -149,7 +150,7 @@ Raw CORONA imagery from EarthExplorer is **not georeferenced**. You will need to
 
 ## 3. Sentinel-2 Multispectral Imagery
 
-The [Sentinel-2 satellite program](https://www.copernicus.eu/en), launched in 2015 by the European Space Agency as part of the EU's Copernicus programme, provides free, high-resolution multispectral imagery across 13 spectral bands. Two satellites (2A and 2B) image the entire land surface approximately every 5 days at 10 m resolution in the visible bands.
+The [Sentinel-2 satellite program](https://www.copernicus.eu/en), launched in 2015 by the European Space Agency as part of the EU's Copernicus programme, provides free, high-resolution multispectral imagery across 13 spectral bands. Two satellites in orbit at a time (originally Sentinel-2A and 2B; Sentinel-2C took over from 2A in 2025) image the entire land surface approximately every 5 days at 10 m resolution in the visible bands.
 
 Sentinel-2 imagery is especially useful for land cover classification, vegetation health monitoring (NDVI), and environmental change detection.
 
@@ -196,7 +197,7 @@ Click **Find products for current view** to open the **Search** tab with matchin
 
 The [Shuttle Radar Topography Mission (SRTM)](https://www.usgs.gov/centers/eros/science/usgs-eros-archive-digital-elevation-shuttle-radar-topography-mission-srtm-1) was a joint international project in 2000 that used radar from the Space Shuttle *Endeavour* to produce one of the most accurate near-global elevation datasets. The most recent release, **SRTM 1 Arc-Second Global (V3, 2014)**, has ~30 m resolution and is divided into 1° × 1° tiles available as free GeoTIFF downloads.
 
-When loaded into QGIS, raw DEM files appear as grayscale images where each pixel's shade represents the elevation of that 30 × 30 m area. From this data you can generate hillshade, slope, aspect, and contour layers: we will do exactly that in the next session.
+When loaded into QGIS, raw DEM files appear as grayscale images where each pixel's shade represents the elevation of that 30 × 30 m area. From this data you can generate hillshade, slope, aspect, and contour layers: we will do exactly that in the next episode, DEM Analysis.
 
 ### Downloading from EarthExplorer
 
